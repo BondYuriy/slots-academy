@@ -1,0 +1,175 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.home-header-wrapper {
+  padding: 200px 0 56px 0;
+  background-color: #fafbfc;
+}
+
+.home-category-background::before {
+  display: block;
+  content: "";
+  border-radius: 10px;
+  background-color: rgba(32, 72, 131, 0.56);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+
+  & .home-header-category {
+    flex: 0 0 75%;
+    display: flex;
+    justify-content: space-between;
+
+    & .home-header-competition {
+      flex: 0 0 42%;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      height: 391px;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      & .info-content {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        right: 30px;
+        color: $white-text;
+        font-size: 15px;
+        font-weight: $Bold;
+        text-transform: uppercase;
+
+        & .stiker-orange {
+          margin-bottom: 12px;
+        }
+
+        & p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    & .home-header-box {
+      flex: 0 0 55%;
+
+      .home-header-slots {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        color: $white-text;
+        font-size: 15px;
+        font-weight: $Bold;
+        height: 180px;
+        margin-bottom: 20px;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+
+        & .info-content {
+          position: absolute;
+          bottom: 30px;
+          left: 30px;
+
+          & .stiker-orange {
+            margin-bottom: 12px;
+          }
+
+          & p {
+            margin: 0;
+          }
+        }
+      }
+
+      & .home-header-smallbox {
+        display: flex;
+        justify-content: space-between;
+
+        & .home-header-bonuses {
+          flex: 0 0 57%;
+          height: 192px;
+          border-radius: 10px;
+          position: relative;
+          overflow: hidden;
+          color: $white-text;
+          font-size: 15px;
+          font-weight: $Bold;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          & .info-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+
+            & .stiker-orange {
+              margin-bottom: 12px;
+            }
+
+            & p {
+              margin: 0;
+            }
+          }
+        }
+
+        & .home-header-casino {
+          flex: 0 0 37%;
+          height: 192px;
+          border-radius: 10px;
+          position: relative;
+          overflow: hidden;
+          color: $white-text;
+          font-size: 15px;
+          font-weight: $Bold;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          & .info-content {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            text-align: center;
+
+            & .stiker-orange {
+              margin-bottom: 12px;
+            }
+
+            & p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .home-header-top {
+    flex: 0 0 23%;
+  }
+}

@@ -1,0 +1,17 @@
+.article {
+  font-size: 12px;
+  font-weight: $Book;
+  text-align: center;
+
+  & h3 {
+    color: $blue-color;
+    font-size: $h3;
+    font-weight: $Bold;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.advantage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+
+  & .advantage-img {
+    flex: 0 0 32%;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .advantage-info {
+    flex: 0 0 65%;
+
+    & .article {
+      margin-bottom: 40px;
+    }
+
+    & .advantage-list {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      counter-reset: li;
+      margin: auto;
+
+      & li {
+        flex: 0 0 40%;
+        margin-bottom: 40px;
+
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0;
+        }
+
+        &:before {
+          display: block;
+          content: counter(li);
+          counter-increment: li;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin: auto;
+          box-shadow: 0 3px 15px rgba(185, 198, 217, 0.54);
+          background-color: $white;
+          color: #204883;
+          font-size: 14px;
+          font-weight: $Bold;
+          line-height: 35px;
+          text-align: center;
+          margin-bottom: 12px;
+        }
+
+        & h5 {
+          color: $orange-color;
+          font-size: 17px;
+          font-weight: $Medium;
+          text-transform: uppercase;
+        }
+
+        & p:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

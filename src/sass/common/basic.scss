@@ -1,0 +1,25 @@
+* :not(g, svg) {
+  transition: 0.5s;
+}
+
+body {
+  // font-family: $Futura;
+  // font-weight: $book;
+  font-size: $font-text;
+  color: $text-color;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
