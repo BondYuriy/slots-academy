@@ -1,0 +1,135 @@
+.home-header-top {
+  height: 391px;
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+
+  & nav {
+    & .nav-tabs {
+      border: 0;
+
+      & .nav-link {
+        flex: 0 0 50%;
+        border: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: $blue-color;
+        color: #5981bc;
+        font-size: 14px;
+        font-weight: $Medium;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span {
+          transition: 0s;
+        }
+
+        & svg {
+          display: block;
+          width: 15px;
+          height: 20px;
+          fill: #5981bc;
+          margin-right: 6px;
+        }
+      }
+
+      & .active {
+        background-color: $title-color;
+        color: $white-text;
+
+        & svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  & .tab-content {
+    padding: 20px 10px;
+
+    & .tab-pane {
+      counter-reset: li;
+
+      & .top-casino {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 17px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          display: block;
+          content: counter(li);
+          counter-increment: li;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: $title-color;
+          color: $white-text;
+          font-size: 10px;
+          font-weight: $Bold;
+          text-align: center;
+          line-height: 18px;
+        }
+
+        & .top-casino-img {
+          flex: 0 0 47px;
+          height: 47px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+
+        & .top-casino-info {
+          flex: 0 0 65%;
+
+          & .title {
+            display: block;
+            color: #3b3b3b;
+            font-size: 14px;
+            font-weight: $Medium;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+          }
+
+          & .rating-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .rating-range {
+              flex: 0 0 70%;
+              height: 7px;
+              border-radius: 10px;
+              background-color: #ededed;
+              position: relative;
+
+              & .rating-range-casino {
+                width: 89%;
+                height: 7px;
+                border-radius: 10px;
+                background-color: #f6772e;
+                position: absolute;
+              }
+            }
+
+            & .rating {
+              color: #959595;
+              font-size: 10px;
+              font-weight: $Medium;
+
+              & .rating-casino {
+                font-weight: $Bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
