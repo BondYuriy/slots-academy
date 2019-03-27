@@ -9,6 +9,7 @@
   font-weight: $Medium;
   line-height: 38px;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     opacity: 0.8;
@@ -83,4 +84,17 @@
   font-size: 12px;
   font-weight: $Medium;
   line-height: 18px;
+}
+
+.stiker-blue-mini {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #204883;
+  color: $white-text;
+  font-size: 11px;
+  font-weight: $Medium;
+  line-height: 20px;
+  text-align: center;
 }
