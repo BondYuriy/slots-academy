@@ -6982,7 +6982,7 @@ a:hover {
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	background-color: rgba(0, 0, 0, 0);
-	background-image: url("../../img/search.svg");
+	background-image: url("../img/search.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
