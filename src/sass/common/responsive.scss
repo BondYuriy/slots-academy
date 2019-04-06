@@ -1,67 +1,66 @@
 /* === heeader === */
 
-@media (min-width: 992px) {
-  body.sticky-header {
-    .subheader-wrapper {
-      display: none;
-    }
-
-    .header-main-wrapper {
-      background-color: rgba(255, 255, 255, 0.9);
-    }
-
-    .header-box {
-      height: 60px;
-
-      & .logo {
-        flex: 0 0 70px;
-        height: 60px;
-      }
-    }
+@media (max-width: 1199px) {
+  .header-box .logo {
+    margin-right: 30px;
   }
 }
 
 @media (max-width: 991px) {
   .header {
-    height: 60px;
-    padding-top: 10px;
+    & .header-box {
+      height: 80px;
 
-    & .header-box .navigations .navbar .navbar-collapse .navbar-nav {
-      & .nav-item {
-        border: 0;
-        margin-bottom: 50px;
+      & .logo {
+        flex: 0 0 90px;
+        height: 76px;
+      }
 
-        &:last-child {
-          margin-bottom: 0;
-        }
+      & .navigations {
+        margin-left: auto;
 
-        &:hover {
-          border: 0;
-        }
+        & .navbar .navbar-collapse .navbar-nav {
+          align-items: flex-start;
+          padding-left: 200px;
 
-        & .nav-link {
-          padding-bottom: 5px;
-          font-size: 20px;
-        }
+          & .nav-item {
+            border: 0;
+            margin: 0;
+            margin-bottom: 50px;
 
-        & .btn {
-          display: block;
-          padding: 11px;
+            &:last-child {
+              margin-bottom: 0;
+            }
 
-          & span {
-            font-size: 20px;
+            &:hover {
+              border: 0;
+            }
+
+            & .nav-link {
+              padding-bottom: 5px;
+              font-size: 20px;
+            }
+
+            & .btn {
+              display: block;
+              padding: 11px;
+
+              & span {
+                font-size: 20px;
+              }
+            }
           }
         }
       }
 
-      & .active {
-        border: 0;
-
-        & .nav-link {
-          font-size: 20px;
-          // color: $react;
-        }
+      & .active span {
+        font-size: 20px;
+        color: $orange-color;
       }
+    }
+
+    .user-options {
+      margin-left: 30px;
     }
   }
 
@@ -79,9 +78,9 @@
   .navbar-toggler span,
   .navbar-toggler span:before,
   .navbar-toggler span:after {
-    // background: $active;
     display: block;
     height: 4px;
+    background-color: $blue-color;
     position: relative;
     top: 0;
     width: 43px;
@@ -112,31 +111,33 @@
   }
 
   .open span:after {
-    transform: translate(10%, 50%) rotate(-45deg);
+    transform: translate(8%, 75%) rotate(-45deg);
     transform-origin: bottom left;
   }
 
   .navbar-collapse {
     position: fixed;
     top: 0;
-    left: 20%;
+    left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(32, 35, 42, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     z-index: 20;
-    padding-top: 70px;
+    padding-top: 60px;
 
     & .navbar-nav .nav-item .nav-link {
       padding: 0;
-      // color: $react;
+      color: $orange-color;
     }
   }
 }
 
 @media (max-width: 767px) {
-  .header-box {
-    & .logo .logo-text {
-      display: none;
+  .subheader form {
+    & input[type="text"] {
+      &:focus {
+        width: 210px;
+      }
     }
   }
 }
@@ -158,6 +159,544 @@
       & .registration {
         flex: 0 0 37px;
       }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  body.sticky-header {
+    .subheader-wrapper {
+      display: none;
+    }
+
+    .header-main-wrapper {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .header-box {
+      height: 60px;
+
+      & .logo {
+        flex: 0 0 70px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+/* === footer === */
+
+@media (max-width: 991px) {
+  .footer {
+    & .footer-nav-box {
+      flex: 0 0 31%;
+    }
+
+    & .footer-form-box {
+      flex: 0 0 35%;
+
+      & form {
+        flex-direction: column;
+
+        & input[type="text"] {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .copyright-box {
+    flex-direction: column-reverse;
+
+    & .social {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    flex-wrap: wrap;
+
+    & .footer-nav-box {
+      flex: 0 0 50%;
+    }
+
+    & .footer-form-box {
+      flex: 0 0 100%;
+      margin-top: 30px;
+
+      & form {
+        flex-direction: column;
+
+        & input[type="text"] {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .copyright-box {
+    flex-direction: column-reverse;
+
+    & .social {
+      margin: 20px 0;
+    }
+  }
+}
+
+/* === advantage === */
+
+@media (max-width: 767px) {
+  .advantage {
+    flex-direction: column;
+
+    & .advantage-img {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .advantage .advantage-info .advantage-list li {
+    margin-bottom: 40px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .advantage .advantage-info .advantage-list {
+    width: 100%;
+    flex-direction: column;
+
+    & li {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* === best-casino-table === */
+
+@media (max-width: 991px) {
+  .casino-table {
+    & .casino-table_header {
+      & .column-1 {
+        flex: 0 0 25%;
+      }
+
+      & .column-2 {
+        flex: 0 0 25%;
+      }
+
+      & .column-3 {
+        flex: 0 0 32%;
+      }
+
+      & .column-4 {
+        flex: 0 0 17%;
+      }
+    }
+
+    & .casino-table_main {
+      & .table-item .table-info {
+        padding: 15px 0 15px 0;
+
+        & .bonuses-box {
+          flex: 0 0 32%;
+        }
+
+        & .btn-box {
+          flex: 0 0 17%;
+
+          & .btn-orange-transparent {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      & .table-item-info ul {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .casino-table {
+    padding-top: 30px;
+
+    & .casino-table_header {
+      display: none;
+    }
+
+    & .casino-table_main .table-item .table-info {
+      flex-wrap: wrap;
+      align-items: center;
+
+      & .casino-box {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+      }
+
+      & .rating-box {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+      }
+
+      & .bonuses-box {
+        flex: 0 0 50%;
+      }
+
+      & .btn-box {
+        flex: 0 0 50%;
+
+        & .btn-orange-transparent {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .casino-table .casino-table_main .table-item .table-info {
+    flex-direction: column;
+    padding: 15px;
+
+    & .casino-box {
+      padding: 0;
+    }
+
+    & .rating-box {
+      width: 100%;
+    }
+
+    & .bonuses-box {
+      margin-bottom: 20px;
+    }
+
+    & .btn-box {
+      flex: 0 0 50%;
+
+      & .btn-orange-transparent {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* === casino-card === */
+
+@media (max-width: 1199px) {
+  .casino-card {
+    height: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .casino-card {
+    width: 220px;
+    height: 200px;
+
+    & img {
+      width: auto;
+    }
+
+    & .item-info {
+      min-width: 180px;
+
+      & .btn-box {
+        flex-direction: column;
+        align-items: center;
+
+        & .btn-white {
+          min-width: 122px;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .casino-card {
+    height: auto;
+  }
+}
+
+/* === header-tabs === */
+
+@media (max-width: 991px) {
+  .home-header-top {
+    height: auto;
+
+    & .tab-content {
+      padding: 20px 30px;
+
+      & .tab-pane .top-casino {
+        & .top-casino-img {
+          flex: 0 0 60px;
+          height: 60px;
+
+          & img {
+            display: block;
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        & .top-casino-info {
+          flex: 0 0 70%;
+
+          & .rating-box {
+            align-items: flex-end;
+
+            & .rating {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .home-header-top {
+    & .tab-content {
+      padding: 20px 15px;
+
+      & .tab-pane .top-casino {
+        & .top-casino-img {
+          flex: 0 0 47px;
+          height: 47px;
+
+          & img {
+            width: 47px;
+            height: 47px;
+          }
+        }
+
+        & .top-casino-info .rating-box .rating {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* === home page === */
+
+@media (max-width: 1199px) {
+  .home-header {
+    & .home-header-category {
+      flex: 0 0 70%;
+
+      & .home-header-competition img {
+        width: auto;
+      }
+
+      & .home-header-box {
+        & .home-header-smallbox {
+          & .home-header-bonuses img {
+            width: auto;
+          }
+
+          & .home-header-casino {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 83px;
+            overflow: hidden;
+
+            & img {
+              width: auto;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      & .home-header-top {
+        flex: 0 0 28%;
+      }
+    }
+  }
+
+  .payment .payment-list-wrapper .payment-list .payment-list-item {
+    flex: 0 0 16%;
+    margin-right: 0.8%;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .payment .payment-list-wrapper .payment-list .payment-list-item {
+    margin-right: 1.6%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(6n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 6) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home-header-wrapper {
+    padding: 160px 0 56px 0;
+  }
+
+  .home-header {
+    flex-wrap: wrap;
+
+    & .home-header-category {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
+
+    & .home-header-top {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .payment .payment-list-wrapper .payment-list .payment-list-item {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .big-list-casino .casino-list .casino-list-item {
+    margin-right: 2%;
+    margin-bottom: 22px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home-header .home-header-category {
+    display: block;
+
+    & .home-header-competition {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .home-header-box {
+      & .home-header-slots {
+        height: auto;
+      }
+
+      & .home-header-smallbox {
+        & .home-header-bonuses img {
+          width: 100%;
+        }
+
+        & .home-header-casino {
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .big-list-casino {
+    & .article {
+      width: 100%;
+    }
+
+    & .casino-list .casino-list-item {
+      flex: 0 0 49%;
+
+      & .casino-card {
+        width: 100%;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .big-list-casino .casino-list .casino-list-item {
+    margin-right: 2%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(2n + 2) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .payment {
+    & .article {
+      width: 100%;
+    }
+
+    & .payment-list-wrapper .payment-list .payment-list-item {
+      flex: 0 0 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .big-list-casino .casino-list .casino-list-item {
+    flex: 0 0 100%;
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
