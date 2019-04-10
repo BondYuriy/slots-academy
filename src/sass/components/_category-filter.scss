@@ -1,0 +1,55 @@
+.category-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .form-group {
+    flex: 0 0 24%;
+    position: relative;
+
+    &:hover {
+      & .icon svg {
+        fill: $title-color;
+      }
+    }
+
+    & .icon {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      bottom: 3px;
+      right: 3px;
+      transition: 0s;
+
+      & svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: #e7ecf2;
+        transition: 0s;
+      }
+    }
+
+    & label {
+      display: block;
+      text-align: center;
+      color: #9f9e9e;
+      font-size: 12px;
+      font-weight: $Bold;
+    }
+
+    & .form-control {
+      border-radius: 0;
+      appearance: none;
+      height: 33px;
+      border: 1px solid #e7ecf2;
+      color: $text-color;
+      font-size: 12px;
+
+      &:focus {
+        box-shadow: none;
+        border: 1px solid $title-color;
+      }
+    }
+  }
+}

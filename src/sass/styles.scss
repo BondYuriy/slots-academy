@@ -1,6 +1,7 @@
 @import "common/animate.scss";
 @import "scss/bootstrap";
 @import "scss/owl-carousel";
+@import "common/fonts.scss";
 @import "common/variables.scss";
 @import "common/indents.scss";
 @import "common/basic";
@@ -16,6 +17,8 @@
 @import "components/header-tabs";
 @import "components/category-card";
 @import "components/breadcrumb";
+@import "components/pagination";
+@import "components/category-filter";
 @import "pages/home.scss";
 @import "pages/category.scss";
 @import "common/responsive.scss";
