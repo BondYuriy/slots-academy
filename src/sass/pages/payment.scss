@@ -10,15 +10,15 @@
   padding: 70px 0 60px 0;
 }
 
-.category-card-list {
+.category-payment-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
 
-  & .card {
-    flex: 0 0 24%;
-    margin-right: 1.33%;
-    margin-bottom: 30px;
+  & .category-payment-card {
+    flex: 0 0 23%;
+    margin-right: 2.66%;
+    margin-bottom: 38px;
 
     &:nth-last-child(4n + 1) {
       margin-right: 0;

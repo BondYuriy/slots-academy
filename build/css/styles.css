@@ -7913,7 +7913,11 @@ a:hover {
 	margin-right: 7px;
 }
 
-.front .category-card-img {
+.front .category-card-link {
+	margin-bottom: 11px;
+}
+
+.front .category-card-link .category-card-img {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
@@ -7921,19 +7925,19 @@ a:hover {
 	overflow: hidden;
 }
 
-.front .category-card-img img {
+.front .category-card-link .category-card-img img {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 
-.front h4 {
+.front .category-card-link h4 {
+	margin: 0;
 	color: #3b3b3b;
 	font-size: 17px;
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 11px;
 }
 
 .front .bonus-box {
@@ -8207,6 +8211,60 @@ a:hover {
 	border: 1px solid #204883;
 }
 
+.category-payment-card {
+	height: 260px;
+	box-shadow: 0 3px 6px rgba(32, 72, 131, 0.1);
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+
+.category-payment-card .payment-card-link {
+	margin-bottom: 15px;
+}
+
+.category-payment-card .payment-card-link .payment-card-img {
+	height: 75px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.category-payment-card .payment-card-link .payment-card-img img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.category-payment-card .payment-card-link h4 {
+	color: #3b3b3b;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+
+.category-payment-card p {
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.category-payment-card p strong {
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+.category-payment-card .btn-orange {
+	display: block;
+}
+
 .wrapper {
 	overflow: hidden;
 }
@@ -8452,23 +8510,55 @@ a:hover {
 	padding: 70px 0 60px 0;
 }
 
-.casino-card-list {
+.category-card-list {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 60px;
 }
 
-.casino-card-list .card {
+.category-card-list .card {
 	flex: 0 0 24%;
 	margin-right: 1.33%;
 	margin-bottom: 30px;
 }
 
-.casino-card-list .card:nth-last-child(4n + 1) {
+.category-card-list .card:nth-last-child(4n + 1) {
 	margin-right: 0;
 }
 
-.casino-card-list .card:nth-last-child(-n + 4) {
+.category-card-list .card:nth-last-child(-n + 4) {
+	margin-bottom: 0;
+}
+
+.casino-catalogy-article {
+	width: 68%;
+	margin: auto;
+	background-color: #fff;
+	padding: 46px 0 62px 0;
+}
+
+.category-card-wrapper {
+	background-color: #fafbfc;
+	padding: 70px 0 60px 0;
+}
+
+.category-payment-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+}
+
+.category-payment-list .category-payment-card {
+	flex: 0 0 23%;
+	margin-right: 2.66%;
+	margin-bottom: 38px;
+}
+
+.category-payment-list .category-payment-card:nth-last-child(4n + 1) {
+	margin-right: 0;
+}
+
+.category-payment-list .category-payment-card:nth-last-child(-n + 4) {
 	margin-bottom: 0;
 }
 
@@ -12259,6 +12349,80 @@ body.sticky-header .header-box .logo {
 
 .header-box .navigations .registration {
 	flex: 0 0 37px;
+}
+
+.subheader nav ul li {
+	margin-right: 12px;
+}
+
+.subheader nav ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.subheader form {
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+
+.subheader form input[type="text"] {
+	display: block;
+	width: 95px;
+	margin-left: auto;
+	padding: 0 40px 0 15px;
+	color: #fff;
+}
+
+.subheader form input[type="text"]:focus {
+	min-width: 100%;
+}
+
+.subheader form input[type="button"] {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right: 2px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer {
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0 48px 0;
+}
+
+.footer .logo-box {
+	margin-bottom: 30px;
+}
+
+.footer .logo-box .logo {
+	width: 186px;
+	height: 157px;
+	margin: 0 auto 10px auto;
+}
+
+.footer .footer-nav-box {
+	flex: 0 0 100%;
+}
+
+.footer .footer-nav-box ul {
+	margin-right: 60px;
+}
+
+.footer .footer-nav-box ul:last-child {
+	margin-right: 0;
+}
+
+.copyright-box .stikers-box ul li {
+	margin-right: 15px;
 }
 
 .advantage .advantage-info .advantage-list {
