@@ -1,0 +1,43 @@
+.breadcrumb-wrapper {
+  background-color: #fafbfc;
+}
+
+.breadcrumb {
+  background-color: #fafbfc;
+  padding: 182px 0 20px 0;
+  height: 46px;
+
+  & .breadcrumb-item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      font-size: 14px;
+      color: $blue-color;
+      font-weight: $Bold;
+    }
+
+    &::before {
+      display: inline-block;
+      content: "/";
+      padding: 0;
+      color: $blue-color;
+      font-weight: $Bold;
+      margin-right: 19px;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  & .active {
+    color: $blue-color;
+    font-weight: $Book;
+  }
+}

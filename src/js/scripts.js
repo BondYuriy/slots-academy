@@ -224,3 +224,11 @@ $(".navbar-toggler").click(function() {
 new WOW().init();
 
 //============================================
+
+$(".flip").click(function() {
+  $(this)
+    .parents(".card")
+    .toggleClass("flipped");
+});
+
+//============================================
