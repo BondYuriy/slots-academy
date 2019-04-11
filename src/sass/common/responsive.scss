@@ -321,6 +321,10 @@
         }
       }
     }
+
+    & .footer-form-box .title {
+      text-align: center;
+    }
   }
 
   .copyright-box .stikers-box ul li {
@@ -475,6 +479,14 @@
   }
 }
 
+/* === breadcrumb === */
+
+@media (max-width: 991px) {
+  .breadcrumb {
+    padding: 135px 0 20px 0;
+  }
+}
+
 /* === casino-card === */
 
 @media (max-width: 1199px) {
@@ -511,6 +523,21 @@
 @media (max-width: 575px) {
   .casino-card {
     height: auto;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+}
+
+/* === category-filter === */
+
+@media (max-width: 991px) {
+  .category-filter .form-group {
+    flex: 0 0 49%;
   }
 }
 
@@ -571,6 +598,71 @@
           font-size: 10px;
         }
       }
+    }
+  }
+}
+
+/* === category page === */
+
+@media (min-width: 1200px) {
+  .category-card-list .card {
+    flex: 0 0 24%;
+    margin-right: 1.33%;
+    margin-bottom: 30px;
+
+    &:nth-last-child(4n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .category-card-list .card {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .category-card-list .card {
+    flex: 0 0 49%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+
+    &:nth-last-child(2n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .casino-catalogy-article {
+    width: 100%;
+  }
+
+  .category-card-list .card {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -773,6 +865,112 @@
   }
 
   .big-list-casino .casino-list .casino-list-item {
+    flex: 0 0 100%;
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* === payment page === */
+
+@media (min-width: 1200px) {
+  .category-payment-list .category-payment-card {
+    flex: 0 0 23%;
+    margin-right: 2.66%;
+    margin-bottom: 38px;
+
+    &:nth-last-child(4n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .category-payment-list .category-payment-card {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 38px;
+
+    &:nth-last-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .category-payment-list .category-payment-card {
+    flex: 0 0 49%;
+    margin-right: 2%;
+    margin-bottom: 38px;
+
+    &:nth-last-child(2n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .category-payment-list .category-payment-card {
+    flex: 0 0 100%;
+    margin-bottom: 38px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* === slots page === */
+
+@media (min-width: 768px) {
+  .slots-list .casino-card {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .slots-list .casino-card {
+    flex: 0 0 49%;
+    margin-right: 2%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(2n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .slots-list .casino-card {
     flex: 0 0 100%;
     margin-bottom: 18px;
 

@@ -14,18 +14,4 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
-
-  & .casino-card {
-    flex: 0 0 32%;
-    margin-right: 2%;
-    margin-bottom: 18px;
-
-    &:nth-last-child(3n + 1) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
-  }
 }

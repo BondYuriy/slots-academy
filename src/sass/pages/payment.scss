@@ -14,18 +14,4 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
-
-  & .category-payment-card {
-    flex: 0 0 23%;
-    margin-right: 2.66%;
-    margin-bottom: 38px;
-
-    &:nth-last-child(4n + 1) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 4) {
-      margin-bottom: 0;
-    }
-  }
 }
