@@ -669,6 +669,22 @@
 
 /* === home page === */
 
+@media (min-width: 1200px) {
+  .payment .payment-list-wrapper .payment-list .payment-list-item {
+    flex: 0 0 16%;
+    margin-right: 0.8%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(6n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 6) {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .home-header {
     & .home-header-category {
@@ -704,27 +720,6 @@
       }
     }
   }
-
-  .payment .payment-list-wrapper .payment-list .payment-list-item {
-    flex: 0 0 16%;
-    margin-right: 0.8%;
-    margin-bottom: 18px;
-  }
-}
-
-@media (min-width: 992px) {
-  .payment .payment-list-wrapper .payment-list .payment-list-item {
-    margin-right: 1.6%;
-    margin-bottom: 18px;
-
-    &:nth-last-child(6n + 1) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 6) {
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media (max-width: 991px) {
@@ -746,7 +741,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 1199px) {
   .payment .payment-list-wrapper .payment-list .payment-list-item {
     flex: 0 0 32%;
     margin-right: 2%;
@@ -792,20 +787,30 @@
       }
     }
 
-    .home-header-box {
+    & .home-header-box {
       & .home-header-slots {
         height: auto;
       }
 
       & .home-header-smallbox {
-        & .home-header-bonuses img {
-          width: 100%;
+        & .home-header-bonuses {
+          height: 150px;
+
+          & img {
+            width: 100%;
+            height: auto;
+          }
         }
 
         & .home-header-casino {
+          height: 150px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
           & img {
-            width: 100%;
-            height: 100%;
+            width: 120%;
+            height: auto;
           }
         }
       }
@@ -848,6 +853,22 @@
 }
 
 @media (max-width: 575px) {
+  .home-header .home-header-category .home-header-box .home-header-smallbox {
+    & .home-header-bonuses {
+      height: 122px;
+
+      & .info-content {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+      }
+    }
+
+    & .home-header-casino {
+      height: 122px;
+    }
+  }
+
   .payment {
     & .article {
       width: 100%;
