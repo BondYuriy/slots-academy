@@ -238,3 +238,21 @@ $(".btn-toggle").click(function() {
     .prev(".toggle-block")
     .toggleClass("show-list");
 });
+
+// $(document).ready(function() {
+//   $(".btn-toggle").click(function() {
+//     var lable = $(".btn-toggle")
+//       .text()
+//       .trim();
+
+//     if (lable == "READ MORE") {
+//       $(".btn-toggle")
+//         .prev(".toggle-block")
+//         .addClass("show-list")
+//         .text("READ LESS");
+//     } else {
+//       $(".btn-toggle").text("READ MORE");
+//       this.prev(".toggle-block").removeClass("show-list");
+//     }
+//   });
+// });

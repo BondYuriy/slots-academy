@@ -80,6 +80,8 @@
       display: flex;
 
       & ul {
+        flex: 0 0 50%;
+
         & li {
           font-size: 15px;
           line-height: 36px;
@@ -89,11 +91,12 @@
           &::before {
             display: block;
             content: "";
-            width: 24px;
+            flex: 0 0 24px;
             height: 24px;
             margin-right: 15px;
             background-position: center;
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
           }
         }
       }
@@ -220,7 +223,7 @@
 
   & .item-detail-list {
     width: 100%;
-    max-height: 445px;
+    max-height: 480px;
     padding: 0 5px 20px 5px;
     overflow: hidden;
     transition: 2s;
@@ -231,6 +234,7 @@
       box-shadow: 0 3px 6px rgba(32, 72, 131, 0.1);
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       padding: 13px 41px;
       margin-bottom: 20px;
 
@@ -250,21 +254,21 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        max-height: 47px;
+        overflow: hidden;
+        transition: 2s;
 
         & .img {
-          flex: 0 0 9.2%;
+          flex: 0 0 9%;
           height: 44px;
           border-radius: 10px;
-          margin-right: 2%;
           background-color: #e7ecf2;
           overflow: hidden;
           display: flex;
           justify-content: center;
           align-items: center;
-
-          &:last-child {
-            margin-right: 0;
-          }
+          margin-right: 2%;
+          margin-bottom: 10px;
 
           & img {
             display: block;
@@ -272,6 +276,22 @@
             max-height: 85%;
           }
         }
+      }
+
+      & .show-list {
+        max-height: 2000px;
+        transition: 4s;
+      }
+
+      & .btn {
+        border-radius: 0;
+        padding: 0;
+        flex: 0 0 70px;
+        color: $orange-color;
+        line-height: 18px;
+        margin-top: 10px;
+        margin-left: 20%;
+        border-bottom: 1px dashed $orange-color;
       }
     }
   }
