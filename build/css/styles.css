@@ -8729,11 +8729,11 @@ a:hover {
 }
 
 .slot-item .slot-item-info .slot-list-box .supports li::before {
-	background-image: url("../../img/checked.svg");
+	background-image: url("../img/checked.svg");
 }
 
 .slot-item .slot-item-info .slot-list-box .not-support li::before {
-	background-image: url("../../img/cancel.svg");
+	background-image: url("../img/cancel.svg");
 }
 
 .slot-item .btn-box {

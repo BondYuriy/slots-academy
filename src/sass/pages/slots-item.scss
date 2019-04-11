@@ -102,12 +102,12 @@
         margin-right: 35px;
 
         & li::before {
-          background-image: url("../../img/checked.svg");
+          background-image: url("../img/checked.svg");
         }
       }
 
       & .not-support li::before {
-        background-image: url("../../img/cancel.svg");
+        background-image: url("../img/cancel.svg");
       }
     }
   }
