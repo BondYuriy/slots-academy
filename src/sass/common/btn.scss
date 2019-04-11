@@ -1,3 +1,12 @@
+.btn {
+  padding: 0;
+  margin: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
 .btn-orange {
   display: inline-block;
   height: 38px;

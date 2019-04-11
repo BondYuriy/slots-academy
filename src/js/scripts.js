@@ -232,3 +232,9 @@ $(".flip").click(function() {
 });
 
 //============================================
+
+$(".btn-toggle").click(function() {
+  $(this)
+    .prev(".toggle-block")
+    .toggleClass("show-list");
+});
