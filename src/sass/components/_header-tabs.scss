@@ -52,6 +52,20 @@
 
     & .tab-pane {
       counter-reset: li;
+      position: relative;
+      padding-left: 24px;
+
+      &::after {
+        display: block;
+        content: "";
+        width: 2px;
+        height: 265px;
+        background-color: $title-color;
+        position: absolute;
+        left: 8px;
+        top: 28px;
+        z-index: 0;
+      }
 
       & .top-casino {
         display: flex;
@@ -76,6 +90,9 @@
           font-weight: $Bold;
           text-align: center;
           line-height: 18px;
+          position: absolute;
+          left: 0;
+          z-index: 1;
         }
 
         & .top-casino-img {
@@ -92,7 +109,7 @@
         }
 
         & .top-casino-info {
-          flex: 0 0 65%;
+          flex: 0 0 70%;
 
           & .title {
             display: block;

@@ -7769,6 +7769,20 @@ a:hover {
 
 .home-header-top .tab-content .tab-pane {
 	counter-reset: li;
+	position: relative;
+	padding-left: 24px;
+}
+
+.home-header-top .tab-content .tab-pane::after {
+	display: block;
+	content: "";
+	width: 2px;
+	height: 265px;
+	background-color: #204883;
+	position: absolute;
+	left: 8px;
+	top: 28px;
+	z-index: 0;
 }
 
 .home-header-top .tab-content .tab-pane .top-casino {
@@ -7795,6 +7809,9 @@ a:hover {
 	font-weight: 700;
 	text-align: center;
 	line-height: 18px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
 }
 
 .home-header-top .tab-content .tab-pane .top-casino .top-casino-img {
@@ -7811,7 +7828,7 @@ a:hover {
 }
 
 .home-header-top .tab-content .tab-pane .top-casino .top-casino-info {
-	flex: 0 0 65%;
+	flex: 0 0 70%;
 }
 
 .home-header-top .tab-content .tab-pane .top-casino .top-casino-info .title {
@@ -11974,6 +11991,22 @@ body.sticky-header .header-box .logo {
 	height: 220px;
 }
 
+.home-header-top .tab-content {
+	padding: 20px 10px;
+}
+
+.home-header-top .tab-content .tab-pane {
+	padding-left: 24px;
+}
+
+.home-header-top .tab-content .tab-pane::after {
+	height: 260px;
+}
+
+.home-header-top .tab-content .tab-pane .top-casino .top-casino-info .title {
+	font-size: 11px;
+}
+
 .home-header .home-header-category {
 	flex: 0 0 70%;
 }
@@ -12266,6 +12299,14 @@ body.sticky-header .header-box .logo {
 
 .home-header-top .tab-content {
 	padding: 20px 30px;
+}
+
+.home-header-top .tab-content .tab-pane {
+	padding-left: 50px;
+}
+
+.home-header-top .tab-content .tab-pane::after {
+	height: 315px;
 }
 
 .home-header-top .tab-content .tab-pane .top-casino .top-casino-img {
@@ -12644,6 +12685,14 @@ body.sticky-header .header-box .logo {
 
 .home-header-top .tab-content {
 	padding: 20px 15px;
+}
+
+.home-header-top .tab-content .tab-pane {
+	padding-left: 30px;
+}
+
+.home-header-top .tab-content .tab-pane::after {
+	height: 260px;
 }
 
 .home-header-top .tab-content .tab-pane .top-casino .top-casino-img {

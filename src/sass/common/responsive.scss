@@ -543,6 +543,24 @@
 
 /* === header-tabs === */
 
+@media (max-width: 1199px) {
+  .home-header-top .tab-content {
+    padding: 20px 10px;
+
+    & .tab-pane {
+      padding-left: 24px;
+
+      &::after {
+        height: 260px;
+      }
+
+      .top-casino .top-casino-info .title {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .home-header-top {
     height: auto;
@@ -550,26 +568,34 @@
     & .tab-content {
       padding: 20px 30px;
 
-      & .tab-pane .top-casino {
-        & .top-casino-img {
-          flex: 0 0 60px;
-          height: 60px;
+      & .tab-pane {
+        padding-left: 50px;
 
-          & img {
-            display: block;
-            width: 60px;
-            height: 60px;
-          }
+        &::after {
+          height: 315px;
         }
 
-        & .top-casino-info {
-          flex: 0 0 70%;
+        & .top-casino {
+          & .top-casino-img {
+            flex: 0 0 60px;
+            height: 60px;
 
-          & .rating-box {
-            align-items: flex-end;
+            & img {
+              display: block;
+              width: 60px;
+              height: 60px;
+            }
+          }
 
-            & .rating {
-              font-size: 14px;
+          & .top-casino-info {
+            flex: 0 0 70%;
+
+            & .rating-box {
+              align-items: flex-end;
+
+              & .rating {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -583,19 +609,27 @@
     & .tab-content {
       padding: 20px 15px;
 
-      & .tab-pane .top-casino {
-        & .top-casino-img {
-          flex: 0 0 47px;
-          height: 47px;
+      & .tab-pane {
+        padding-left: 30px;
 
-          & img {
-            width: 47px;
-            height: 47px;
-          }
+        &::after {
+          height: 260px;
         }
 
-        & .top-casino-info .rating-box .rating {
-          font-size: 10px;
+        & .top-casino {
+          & .top-casino-img {
+            flex: 0 0 47px;
+            height: 47px;
+
+            & img {
+              width: 47px;
+              height: 47px;
+            }
+          }
+
+          & .top-casino-info .rating-box .rating {
+            font-size: 10px;
+          }
         }
       }
     }
