@@ -1,8 +1,8 @@
 /* === heeader === */
 
 @media (max-width: 1199px) {
-  .header-box .logo {
-    margin-right: 30px;
+  .header-box .nav-box {
+    flex: 0 0 85%;
   }
 }
 
@@ -16,74 +16,88 @@
         height: 76px;
       }
 
-      & .navigations {
-        margin-left: auto;
+      & .nav-box {
+        flex: 0 0 auto;
+        flex-direction: row-reverse;
 
-        & .navbar .navbar-collapse .navbar-nav {
-          align-items: flex-start;
-          padding-left: 200px;
+        & .navigations {
+          margin-left: auto;
 
-          & .nav-item {
-            border: 0;
-            margin: 0;
-            margin-bottom: 50px;
+          & .navbar {
+            padding: 0;
 
-            &:last-child {
-              margin-bottom: 0;
-            }
+            & .navbar-collapse .navbar-nav {
+              & .nav-item {
+                border: 0;
+                margin: 0;
+                margin-bottom: 50px;
 
-            &:hover {
-              border: 0;
-            }
+                &:last-child {
+                  margin-bottom: 0;
+                }
 
-            & .nav-link {
-              padding-bottom: 5px;
-              font-size: 20px;
-            }
+                &:hover {
+                  border: 0;
+                }
 
-            & .btn {
-              display: block;
-              padding: 11px;
+                & .nav-link {
+                  padding-bottom: 5px;
+                  font-size: 20px;
+                }
 
-              & span {
-                font-size: 20px;
+                & .btn {
+                  display: block;
+                  padding: 11px;
+
+                  & span {
+                    font-size: 20px;
+                  }
+                }
               }
             }
           }
         }
+
+        & .active span {
+          font-size: 20px;
+          color: $orange-color;
+        }
       }
 
-      & .active span {
-        font-size: 20px;
-        color: $orange-color;
-      }
-    }
+      & .user-options {
+        padding-right: 70px;
 
-    .user-options {
-      margin-left: 30px;
+        & .login {
+          margin-right: 30px;
+        }
+      }
     }
   }
 
   .navbar-toggler {
     border: 0;
     padding: 0;
-    width: 43px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: $orange-color;
+    outline: none !important;
     position: absolute;
     right: 0;
-    outline: none !important;
-    z-index: 25;
+    z-index: 10;
   }
 
   .navbar-toggler span,
   .navbar-toggler span:before,
   .navbar-toggler span:after {
     display: block;
-    height: 4px;
-    background-color: $blue-color;
+    height: 2px;
+    background-color: $white;
     position: relative;
     top: 0;
-    width: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
     transition: all 0.25s ease;
   }
 
@@ -94,11 +108,11 @@
   }
 
   .navbar-toggler span:before {
-    top: -12px;
+    top: -10px;
   }
 
   .navbar-toggler span:after {
-    top: 12px;
+    top: 10px;
   }
 
   .open span {
@@ -106,12 +120,12 @@
   }
 
   .open span:before {
-    transform: translate(10%, -50%) rotate(45deg);
+    transform: translate(-30%, 50%) rotate(45deg);
     transform-origin: top left;
   }
 
   .open span:after {
-    transform: translate(8%, 75%) rotate(-45deg);
+    transform: translate(-30%, -50%) rotate(-45deg);
     transform-origin: bottom left;
   }
 
@@ -122,7 +136,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.95);
-    z-index: 20;
+    z-index: 9;
     padding-top: 60px;
 
     & .navbar-nav .nav-item .nav-link {
@@ -143,25 +157,6 @@
 }
 
 @media (max-width: 575px) {
-  .header-box {
-    & .logo {
-      flex: 0 0 55%;
-    }
-
-    .navigations {
-      flex: 0 0 30%;
-
-      & .navbar {
-        flex: 0 0 50%;
-        padding: 1px;
-      }
-
-      & .registration {
-        flex: 0 0 37px;
-      }
-    }
-  }
-
   .subheader {
     & nav ul li {
       margin-right: 12px;
@@ -203,6 +198,14 @@
         background-repeat: no-repeat;
         background-position: center;
       }
+    }
+  }
+
+  .header .header-box .user-options {
+    padding-right: 55px;
+
+    & .login {
+      margin-right: 10px;
     }
   }
 }

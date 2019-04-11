@@ -93,12 +93,12 @@
 .header-box {
   height: 130px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   & .logo {
     flex: 0 0 123px;
     height: 104px;
-    margin-right: 55px;
 
     & img {
       display: block;
@@ -107,85 +107,92 @@
     }
   }
 
-  & .navigations {
-    & .navbar {
-      & .navbar-collapse .navbar-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  & .nav-box {
+    flex: 0 0 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        & .nav-item {
-          margin-right: 39px;
+    & .navigations {
+      & .navbar {
+        & .navbar-collapse .navbar-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 
-          &:last-child {
-            margin-right: 0;
-          }
+          & .nav-item {
+            margin-right: 39px;
 
-          & .nav-link {
-            padding: 0;
-            display: flex;
-            align-items: center;
-            color: #3c3c3c;
-            font-size: 14px;
-            font-weight: $Medium;
-            position: relative;
-
-            &:hover {
-              color: $orange-color;
+            &:last-child {
+              margin-right: 0;
             }
 
-            & .nav-item-img {
-              height: 26px;
-              margin-right: 10px;
+            & .nav-link {
+              padding: 0;
+              display: flex;
+              align-items: center;
+              color: #3c3c3c;
+              font-size: 14px;
+              font-weight: $Medium;
+              position: relative;
 
-              & img {
+              &:hover {
+                color: $orange-color;
+              }
+
+              & .nav-item-img {
+                height: 26px;
+                margin-right: 10px;
+
+                & img {
+                  display: block;
+                  width: auto;
+                  height: 100%;
+                }
+              }
+
+              & span {
                 display: block;
-                width: auto;
-                height: 100%;
+                border-bottom: 1px solid rgba(32, 72, 131, 0);
+                transition: 0s;
               }
             }
 
-            & span {
+            & .active {
+              outline: none;
+              position: relative;
+
+              & span {
+                border-bottom: 1px solid rgba(32, 72, 131, 1);
+              }
+
+              &:hover {
+                color: #3c3c3c;
+              }
+            }
+
+            & .btn {
               display: block;
-              border-bottom: 1px solid rgba(32, 72, 131, 0);
-              transition: 0s;
+              padding: 11px 0;
             }
-          }
-
-          & .active {
-            outline: none;
-            position: relative;
-
-            & span {
-              border-bottom: 1px solid rgba(32, 72, 131, 1);
-            }
-
-            &:hover {
-              color: #3c3c3c;
-            }
-          }
-
-          & .btn {
-            display: block;
-            padding: 11px 0;
           }
         }
       }
     }
-  }
 
-  & .user-options {
-    margin-left: auto;
+    & .user-options {
+      margin-left: auto;
 
-    & .login {
-      color: #3c3c3c;
-      font-size: 13px;
-      font-weight: $Medium;
-      text-transform: uppercase;
-      margin-right: 42px;
+      & .login {
+        color: #3c3c3c;
+        font-size: 13px;
+        font-weight: $Medium;
+        text-transform: uppercase;
+        margin-right: 42px;
 
-      &:hover {
-        color: $orange-color;
+        &:hover {
+          color: $orange-color;
+        }
       }
     }
   }

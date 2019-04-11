@@ -7037,13 +7037,13 @@ a:hover {
 .header-box {
 	height: 130px;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .header-box .logo {
 	flex: 0 0 123px;
 	height: 104px;
-	margin-right: 55px;
 }
 
 .header-box .logo img {
@@ -7052,21 +7052,28 @@ a:hover {
 	height: 100%;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav {
+.header-box .nav-box {
+	flex: 0 0 75%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item {
 	margin-right: 39px;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
 	margin-right: 0;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -7076,50 +7083,50 @@ a:hover {
 	position: relative;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
 	color: #f6772e;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .nav-item-img {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .nav-item-img {
 	height: 26px;
 	margin-right: 10px;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .nav-item-img img {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .nav-item-img img {
 	display: block;
 	width: auto;
 	height: 100%;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link span {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link span {
 	display: block;
 	border-bottom: 1px solid rgba(32, 72, 131, 0);
 	transition: 0s;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active {
 	outline: none;
 	position: relative;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active span {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active span {
 	border-bottom: 1px solid #204883;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active:hover {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active:hover {
 	color: #3c3c3c;
 }
 
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .btn {
+.header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .btn {
 	display: block;
 	padding: 11px 0;
 }
 
-.header-box .user-options {
+.header-box .nav-box .user-options {
 	margin-left: auto;
 }
 
-.header-box .user-options .login {
+.header-box .nav-box .user-options .login {
 	color: #3c3c3c;
 	font-size: 13px;
 	font-weight: 500;
@@ -7127,7 +7134,7 @@ a:hover {
 	margin-right: 42px;
 }
 
-.header-box .user-options .login:hover {
+.header-box .nav-box .user-options .login:hover {
 	color: #f6772e;
 }
 
@@ -11865,8 +11872,8 @@ body.sticky-header .header-box .logo {
 
 @media (max-width: 1199px) {
 
-.header-box .logo {
-	margin-right: 30px;
+.header-box .nav-box {
+	flex: 0 0 85%;
 }
 
 .casino-card {
@@ -11943,72 +11950,85 @@ body.sticky-header .header-box .logo {
 	height: 76px;
 }
 
-.header .header-box .navigations {
+.header .header-box .nav-box {
+	flex: 0 0 auto;
+	flex-direction: row-reverse;
+}
+
+.header .header-box .nav-box .navigations {
 	margin-left: auto;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav {
-	align-items: flex-start;
-	padding-left: 200px;
+.header .header-box .nav-box .navigations .navbar {
+	padding: 0;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item {
+.header .header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item {
 	border: 0;
 	margin: 0;
 	margin-bottom: 50px;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
+.header .header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
 	margin-bottom: 0;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+.header .header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:hover {
 	border: 0;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+.header .header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 	padding-bottom: 5px;
 	font-size: 20px;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .btn {
+.header .header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .btn {
 	display: block;
 	padding: 11px;
 }
 
-.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .btn span {
+.header .header-box .nav-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .btn span {
 	font-size: 20px;
 }
 
-.header .header-box .active span {
+.header .header-box .nav-box .active span {
 	font-size: 20px;
 	color: #f6772e;
 }
 
-.header .user-options {
-	margin-left: 30px;
+.header .header-box .user-options {
+	padding-right: 70px;
+}
+
+.header .header-box .user-options .login {
+	margin-right: 30px;
 }
 
 .navbar-toggler {
 	border: 0;
 	padding: 0;
-	width: 43px;
-	height: 35px;
+	width: 38px;
+	height: 38px;
+	border-radius: 5px;
+	background-color: #f6772e;
+	outline: none !important;
 	position: absolute;
 	right: 0;
-	outline: none !important;
-	z-index: 25;
+	z-index: 10;
 }
 
 .navbar-toggler span,
 .navbar-toggler span:before,
 .navbar-toggler span:after {
 	display: block;
-	height: 4px;
-	background-color: #163665;
+	height: 2px;
+	background-color: #fff;
 	position: relative;
 	top: 0;
-	width: 43px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 26px;
 	transition: all 0.25s ease;
 }
 
@@ -12019,11 +12039,11 @@ body.sticky-header .header-box .logo {
 }
 
 .navbar-toggler span:before {
-	top: -12px;
+	top: -10px;
 }
 
 .navbar-toggler span:after {
-	top: 12px;
+	top: 10px;
 }
 
 .open span {
@@ -12031,15 +12051,15 @@ body.sticky-header .header-box .logo {
 }
 
 .open span:before {
-	-webkit-transform: translate(10%, -50%) rotate(45deg);
-	transform: translate(10%, -50%) rotate(45deg);
+	-webkit-transform: translate(-30%, 50%) rotate(45deg);
+	transform: translate(-30%, 50%) rotate(45deg);
 	-webkit-transform-origin: top left;
 	transform-origin: top left;
 }
 
 .open span:after {
-	-webkit-transform: translate(8%, 75%) rotate(-45deg);
-	transform: translate(8%, 75%) rotate(-45deg);
+	-webkit-transform: translate(-30%, -50%) rotate(-45deg);
+	transform: translate(-30%, -50%) rotate(-45deg);
 	-webkit-transform-origin: bottom left;
 	transform-origin: bottom left;
 }
@@ -12051,7 +12071,7 @@ body.sticky-header .header-box .logo {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(255, 255, 255, 0.95);
-	z-index: 20;
+	z-index: 9;
 	padding-top: 60px;
 }
 
@@ -12366,23 +12386,6 @@ body.sticky-header .header-box .logo {
 
 @media (max-width: 575px) {
 
-.header-box .logo {
-	flex: 0 0 55%;
-}
-
-.header-box .navigations {
-	flex: 0 0 30%;
-}
-
-.header-box .navigations .navbar {
-	flex: 0 0 50%;
-	padding: 1px;
-}
-
-.header-box .navigations .registration {
-	flex: 0 0 37px;
-}
-
 .subheader nav ul li {
 	margin-right: 12px;
 }
@@ -12423,6 +12426,14 @@ body.sticky-header .header-box .logo {
 	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.header .header-box .user-options {
+	padding-right: 55px;
+}
+
+.header .header-box .user-options .login {
+	margin-right: 10px;
 }
 
 .footer {
