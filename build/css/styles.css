@@ -8875,6 +8875,7 @@ a:hover {
 	padding: 62px 0;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .slot-item .slot-item-img {
@@ -8953,10 +8954,11 @@ a:hover {
 
 .slot-item .slot-item-info .slot-list-box {
 	display: flex;
+	justify-content: space-between;
 }
 
 .slot-item .slot-item-info .slot-list-box ul {
-	flex: 0 0 50%;
+	flex: 0 0 46%;
 }
 
 .slot-item .slot-item-info .slot-list-box ul li {
@@ -8975,10 +8977,6 @@ a:hover {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-.slot-item .slot-item-info .slot-list-box .supports {
-	margin-right: 35px;
 }
 
 .slot-item .slot-item-info .slot-list-box .supports li::before {
@@ -9362,11 +9360,15 @@ a:hover {
 
 /* === header-tabs === */
 
+/* === user-review-card === */
+
 /* === category page === */
 
 /* === home page === */
 
 /* === payment page === */
+
+/* === slots-item page === */
 
 /* === slots page === */
 
@@ -12805,6 +12807,32 @@ body.sticky-header .header-box .logo {
 	flex: 0 0 28%;
 }
 
+.slot-item .slot-item-img {
+	flex: 0 0 200px;
+	height: 200px;
+}
+
+.slot-item .slot-item-info {
+	flex: 0 0 52%;
+}
+
+.slot-item .btn-box {
+	flex: 0 0 22%;
+}
+
+.slot-item .btn-box .stikers-box .stiker {
+	height: 70px;
+	margin-right: 10px;
+}
+
+.slot-item .btn-box .btn {
+	width: 180px;
+}
+
+.item-top .item-top-list {
+	max-height: 245px;
+}
+
 }
 
 @media (max-width: 991.98px) {
@@ -13101,6 +13129,10 @@ body.sticky-header .header-box .logo {
 	font-size: 14px;
 }
 
+.user-review-card {
+	padding: 15px;
+}
+
 .home-header-wrapper {
 	padding: 160px 0 56px 0;
 }
@@ -13116,6 +13148,55 @@ body.sticky-header .header-box .logo {
 
 .home-header .home-header-top {
 	flex: 0 0 100%;
+}
+
+.slot-item .slot-item-info {
+	flex: 0 0 68%;
+}
+
+.slot-item .btn-box {
+	flex: 0 0 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.slot-item .btn-box .stikers-box {
+	margin: 0;
+}
+
+.slot-item .btn-box .stikers-box .stiker {
+	height: 70px;
+	margin-right: 30px;
+}
+
+.slot-item .btn-box .btn {
+	margin: 0;
+}
+
+.item-bonus .item-bonuse-list {
+	max-height: 128px;
+}
+
+.item-bonus .item-bonuse-list .item-bonus-card span {
+	flex: 0 0 70%;
+}
+
+.item-detail .item-detail-list .item-detail-card .img-box .img {
+	flex: 0 0 12%;
+}
+
+.item-rewiew .rewiew-article {
+	max-height: 160px;
+}
+
+.item-top .item-top-list {
+	max-height: 210px;
+}
+
+.user-review .user-review-box .user-review .user-review-box .list-box {
+	flex: 0 0 50%;
 }
 
 }

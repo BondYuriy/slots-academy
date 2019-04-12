@@ -636,6 +636,14 @@
   }
 }
 
+/* === user-review-card === */
+
+@media (max-width: 991px) {
+  .user-review-card {
+    padding: 15px;
+  }
+}
+
 /* === category page === */
 
 @media (min-width: 1200px) {
@@ -986,6 +994,93 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+/* === slots-item page === */
+
+@media (max-width: 1199px) {
+  .slot-item {
+    & .slot-item-img {
+      flex: 0 0 200px;
+      height: 200px;
+    }
+
+    & .slot-item-info {
+      flex: 0 0 52%;
+    }
+
+    & .btn-box {
+      flex: 0 0 22%;
+
+      & .stikers-box .stiker {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      & .btn {
+        width: 180px;
+      }
+    }
+  }
+
+  .item-top .item-top-list {
+    max-height: 245px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slot-item {
+    & .slot-item-info {
+      flex: 0 0 68%;
+    }
+
+    & .btn-box {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+
+      & .stikers-box {
+        margin: 0;
+
+        & .stiker {
+          height: 70px;
+          margin-right: 30px;
+        }
+      }
+
+      & .btn {
+        margin: 0;
+      }
+    }
+  }
+
+  .item-bonus .item-bonuse-list {
+    max-height: 128px;
+
+    .item-bonus-card span {
+      flex: 0 0 70%;
+    }
+  }
+
+  .item-detail .item-detail-list .item-detail-card .img-box .img {
+    flex: 0 0 12%;
+  }
+
+  .item-rewiew .rewiew-article {
+    max-height: 160px;
+  }
+
+  .item-top .item-top-list {
+    max-height: 210px;
+  }
+
+  .user-review .user-review-box {
+    & .user-review .user-review-box .list-box {
+      flex: 0 0 50%;
     }
   }
 }

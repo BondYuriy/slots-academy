@@ -2,6 +2,7 @@
   padding: 62px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   & .slot-item-img {
     flex: 0 0 247px;
@@ -78,9 +79,10 @@
 
     & .slot-list-box {
       display: flex;
+      justify-content: space-between;
 
       & ul {
-        flex: 0 0 50%;
+        flex: 0 0 46%;
 
         & li {
           font-size: 15px;
@@ -102,8 +104,6 @@
       }
 
       & .supports {
-        margin-right: 35px;
-
         & li::before {
           background-image: url("../img/checked.svg");
         }
