@@ -6830,6 +6830,7 @@ a:hover {
 .btn {
 	padding: 0;
 	margin: 0;
+	border: 0;
 }
 
 .btn:focus {
@@ -8336,6 +8337,253 @@ a:hover {
 	margin-left: auto;
 }
 
+.rating {
+	display: flex;
+	align-items: center;
+}
+
+.rating li {
+	width: 21px;
+	height: 21px;
+	margin-right: 6px;
+}
+
+.rating li:last-child {
+	margin-right: 0;
+}
+
+.rating li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.user-review-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user-review-form h5 {
+	color: #9f9e9e;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.user-review-form .rating {
+	margin-bottom: 13px;
+}
+
+.user-review-form form input[type="text"],
+.user-review-form form input[type="email"] {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 34px;
+	border: 1px solid #e7ecf2;
+	background-color: #fff;
+	color: #777777;
+	font-weight: 400;
+	font-style: 14px;
+	padding: 0 20px;
+	margin-bottom: 11px;
+}
+
+.user-review-form form input[type="text"]::-webkit-input-placeholder,
+.user-review-form form input[type="email"]::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.user-review-form form input[type="text"]::-ms-input-placeholder,
+.user-review-form form input[type="email"]::-ms-input-placeholder {
+	font-size: 12px;
+}
+
+.user-review-form form input[type="text"]::placeholder,
+.user-review-form form input[type="email"]::placeholder {
+	font-size: 12px;
+}
+
+.user-review-form form input[type="text"]:focus,
+.user-review-form form input[type="email"]:focus {
+	border: 1px solid #f6772e;
+}
+
+.user-review-form form .textarea-box {
+	position: relative;
+	margin-bottom: 11px;
+}
+
+.user-review-form form .textarea-box textarea {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	display: block;
+	width: 100%;
+	border: 1px solid #e7ecf2;
+	background-color: #fff;
+	color: #777777;
+	font-weight: 400;
+	font-style: 14px;
+	padding: 10px 20px;
+	resize: none;
+}
+
+.user-review-form form .textarea-box textarea::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.user-review-form form .textarea-box textarea::-ms-input-placeholder {
+	font-size: 12px;
+}
+
+.user-review-form form .textarea-box textarea::placeholder {
+	font-size: 12px;
+}
+
+.user-review-form form .textarea-box textarea:focus {
+	border: 1px solid #f6772e;
+}
+
+.user-review-form form .textarea-box img {
+	display: block;
+	width: 36px;
+	height: auto;
+	position: absolute;
+	left: 8px;
+	bottom: 8px;
+}
+
+.user-review-form form .form-article {
+	color: #d2dae5;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 12px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.user-review-form form .btn-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.user-review-form form .btn-box .verification {
+	flex: 0 0 53%;
+}
+
+.user-review-form form .btn-box .verification img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.user-review-card {
+	box-shadow: 0 3px 6px rgba(32, 72, 131, 0.1);
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 15px 15px 15px 35px;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.user-review-card .user-img-box {
+	flex: 0 0 100px;
+	padding-top: 20px;
+}
+
+.user-review-card .user-img-box .user-img {
+	width: 82px;
+	height: 82px;
+	border-radius: 50%;
+	margin: 0 auto 8px auto;
+	overflow: hidden;
+}
+
+.user-review-card .user-img-box .user-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.user-review-card .user-img-box .title {
+	display: block;
+	color: #e7ecf2;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.user-review-card .user-img-box .user-name {
+	display: block;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.user-review-card .user-post {
+	flex: 0 0 80%;
+}
+
+.user-review-card .user-post .user-post-date {
+	display: block;
+	color: #e7ecf2;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.user-review-card .user-post .rating {
+	margin-bottom: 30px;
+}
+
+.user-review-card .user-post .positive-feedback-box,
+.user-review-card .user-post .negative-feedback-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-review-card .user-post .positive-feedback-box .negative-feedback-img,
+.user-review-card .user-post .positive-feedback-box .positive-feedback-img,
+.user-review-card .user-post .negative-feedback-box .negative-feedback-img,
+.user-review-card .user-post .negative-feedback-box .positive-feedback-img {
+	flex: 0 0 36px;
+	margin-right: 22px;
+	padding-top: 10px;
+}
+
+.user-review-card .user-post .positive-feedback-box .negative-feedback-img img,
+.user-review-card .user-post .positive-feedback-box .positive-feedback-img img,
+.user-review-card .user-post .negative-feedback-box .negative-feedback-img img,
+.user-review-card .user-post .negative-feedback-box .positive-feedback-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.user-review-card .user-post .positive-feedback-box .feedback-article,
+.user-review-card .user-post .negative-feedback-box .feedback-article {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.user-review-card .user-post .positive-feedback-box .feedback-article p:last-child,
+.user-review-card .user-post .negative-feedback-box .feedback-article p:last-child {
+	margin-bottom: 0;
+}
+
+.user-review-card .user-post .positive-feedback-box {
+	margin-bottom: 24px;
+}
+
 .wrapper {
 	overflow: hidden;
 }
@@ -9032,6 +9280,65 @@ a:hover {
 .item-top .btn-toggle {
 	margin-top: 22px;
 	padding: 0 20px;
+}
+
+.user-review-wrapper {
+	background-color: #fafbfc;
+}
+
+.user-review {
+	padding: 38px 0 90px 0;
+}
+
+.user-review h3 {
+	color: #163665;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.user-review .user-review-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-review .user-review-box .list-box {
+	flex: 0 0 67%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user-review .user-review-box .list-box .user-review-list {
+	max-height: 790px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	transition: 3s;
+}
+
+.user-review .user-review-box .list-box .user-review-list .user-review-card {
+	margin: 0 5px;
+	margin-bottom: 33px;
+}
+
+.user-review .user-review-box .list-box .user-review-list .user-review-card:last-child {
+	margin-bottom: 0;
+}
+
+.user-review .user-review-box .list-box .show-list {
+	max-height: 5000px;
+	transition: 6s;
+}
+
+.user-review .user-review-box .list-box .btn-toggle {
+	margin-top: 22px;
+	padding: 0 20px;
+}
+
+.user-review .user-review-box .user-review-form {
+	flex: 0 0 30%;
 }
 
 /* === heeader === */
