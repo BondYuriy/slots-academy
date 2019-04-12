@@ -415,6 +415,7 @@
 
 .user-review {
   padding: 38px 0 90px 0;
+  position: relative;
 
   & h3 {
     color: $blue-color;
@@ -464,6 +465,9 @@
 
     & .user-review-form {
       flex: 0 0 30%;
+      height: 590px;
+      position: sticky;
+      top: 60px;
     }
   }
 }

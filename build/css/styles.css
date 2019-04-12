@@ -9288,6 +9288,7 @@ a:hover {
 
 .user-review {
 	padding: 38px 0 90px 0;
+	position: relative;
 }
 
 .user-review h3 {
@@ -9339,6 +9340,10 @@ a:hover {
 
 .user-review .user-review-box .user-review-form {
 	flex: 0 0 30%;
+	height: 590px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 60px;
 }
 
 /* === heeader === */
