@@ -18,11 +18,12 @@
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 1;
   }
 
-  &:hover::before {
-    background-color: rgba(32, 72, 131, 0.8);
-  }
+  // &:hover::before {
+  //   background-color: rgba(32, 72, 131, 0.8);
+  // }
 }
 
 .home-header {
@@ -48,6 +49,16 @@
         border-radius: 10px;
       }
 
+      &:hover {
+        & img {
+          filter: blur(4px);
+        }
+
+        &::before {
+          background-color: rgba(32, 72, 131, 0.8);
+        }
+      }
+
       & .info-content {
         position: absolute;
         bottom: 20px;
@@ -57,6 +68,7 @@
         font-size: 15px;
         font-weight: $Bold;
         text-transform: uppercase;
+        z-index: 3;
 
         & .stiker-orange {
           margin-bottom: 12px;
@@ -81,6 +93,16 @@
         height: 180px;
         margin-bottom: 20px;
 
+        &:hover {
+          & img {
+            filter: blur(4px);
+          }
+
+          &::before {
+            background-color: rgba(32, 72, 131, 0.8);
+          }
+        }
+
         & img {
           display: block;
           width: 100%;
@@ -92,6 +114,7 @@
           position: absolute;
           bottom: 30px;
           left: 30px;
+          z-index: 3;
 
           & .stiker-orange {
             margin-bottom: 12px;
@@ -117,6 +140,16 @@
           font-size: 15px;
           font-weight: $Bold;
 
+          &:hover {
+            & img {
+              filter: blur(4px);
+            }
+
+            &::before {
+              background-color: rgba(32, 72, 131, 0.8);
+            }
+          }
+
           & img {
             display: block;
             width: 100%;
@@ -128,6 +161,7 @@
             bottom: 30px;
             left: 30px;
             right: 30px;
+            z-index: 3;
 
             & .stiker-orange {
               margin-bottom: 12px;
@@ -149,6 +183,16 @@
           font-size: 15px;
           font-weight: $Bold;
 
+          &:hover {
+            & img {
+              filter: blur(4px);
+            }
+
+            &::before {
+              background-color: rgba(32, 72, 131, 0.8);
+            }
+          }
+
           & img {
             display: block;
             width: 100%;
@@ -161,6 +205,7 @@
             transform: translateX(-50%);
             bottom: 30px;
             text-align: center;
+            z-index: 3;
 
             & .stiker-orange {
               margin-bottom: 12px;

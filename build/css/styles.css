@@ -7615,10 +7615,18 @@ a:hover {
 	top: 0;
 	bottom: 0;
 	border-radius: 10px;
+	z-index: 2;
 }
 
 .casino-card:hover::before {
-	background-image: linear-gradient(180deg, rgba(32, 72, 131, 0.4) 0%, rgba(32, 72, 131, 0.7) 27%, rgba(26, 62, 114, 0.9) 61%, #173868 92%, #163665 100%);
+	background-image: linear-gradient(180deg, rgba(32, 72, 131, 0.5) 0%, rgba(32, 72, 131, 0.7) 27%, rgba(26, 62, 114, 0.9) 61%, #173868 92%, #163665 100%);
+}
+
+.casino-card:hover .item-info {
+	left: 50%;
+	bottom: 50%;
+	-webkit-transform: translate(-50%, 50%);
+	transform: translate(-50%, 50%);
 }
 
 .casino-card img {
@@ -7632,6 +7640,7 @@ a:hover {
 	position: absolute;
 	top: 13px;
 	right: 9px;
+	z-index: 3;
 }
 
 .casino-card .item-info {
@@ -7640,6 +7649,7 @@ a:hover {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	bottom: 13px;
+	z-index: 3;
 }
 
 .casino-card .item-info .title-box {
@@ -8631,10 +8641,7 @@ a:hover {
 	right: 0;
 	top: 0;
 	bottom: 0;
-}
-
-.home-category-background:hover::before {
-	background-color: rgba(32, 72, 131, 0.8);
+	z-index: 1;
 }
 
 .home-header {
@@ -8663,6 +8670,15 @@ a:hover {
 	border-radius: 10px;
 }
 
+.home-header .home-header-category .home-header-competition:hover img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+.home-header .home-header-category .home-header-competition:hover::before {
+	background-color: rgba(32, 72, 131, 0.8);
+}
+
 .home-header .home-header-category .home-header-competition .info-content {
 	position: absolute;
 	bottom: 20px;
@@ -8672,6 +8688,7 @@ a:hover {
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
+	z-index: 3;
 }
 
 .home-header .home-header-category .home-header-competition .info-content .stiker-orange {
@@ -8697,6 +8714,15 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+.home-header .home-header-category .home-header-box .home-header-slots:hover img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+.home-header .home-header-category .home-header-box .home-header-slots:hover::before {
+	background-color: rgba(32, 72, 131, 0.8);
+}
+
 .home-header .home-header-category .home-header-box .home-header-slots img {
 	display: block;
 	width: 100%;
@@ -8708,6 +8734,7 @@ a:hover {
 	position: absolute;
 	bottom: 30px;
 	left: 30px;
+	z-index: 3;
 }
 
 .home-header .home-header-category .home-header-box .home-header-slots .info-content .stiker-orange {
@@ -8734,6 +8761,15 @@ a:hover {
 	font-weight: 700;
 }
 
+.home-header .home-header-category .home-header-box .home-header-smallbox .home-header-bonuses:hover img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+.home-header .home-header-category .home-header-box .home-header-smallbox .home-header-bonuses:hover::before {
+	background-color: rgba(32, 72, 131, 0.8);
+}
+
 .home-header .home-header-category .home-header-box .home-header-smallbox .home-header-bonuses img {
 	display: block;
 	width: 100%;
@@ -8745,6 +8781,7 @@ a:hover {
 	bottom: 30px;
 	left: 30px;
 	right: 30px;
+	z-index: 3;
 }
 
 .home-header .home-header-category .home-header-box .home-header-smallbox .home-header-bonuses .info-content .stiker-orange {
@@ -8766,6 +8803,15 @@ a:hover {
 	font-weight: 700;
 }
 
+.home-header .home-header-category .home-header-box .home-header-smallbox .home-header-casino:hover img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+.home-header .home-header-category .home-header-box .home-header-smallbox .home-header-casino:hover::before {
+	background-color: rgba(32, 72, 131, 0.8);
+}
+
 .home-header .home-header-category .home-header-box .home-header-smallbox .home-header-casino img {
 	display: block;
 	width: 100%;
@@ -8779,6 +8825,7 @@ a:hover {
 	transform: translateX(-50%);
 	bottom: 30px;
 	text-align: center;
+	z-index: 3;
 }
 
 .home-header .home-header-category .home-header-box .home-header-smallbox .home-header-casino .info-content .stiker-orange {
@@ -9397,7 +9444,12 @@ a:hover {
 	position: relative;
 }
 
-.item-info-box .item-info-img img {
+.item-info-box .item-info-img:hover .img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+.item-info-box .item-info-img .img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -9415,6 +9467,20 @@ a:hover {
 
 .item-info-box .item-info-img .info-img-options:hover {
 	background-color: rgba(32, 72, 131, 0.8);
+}
+
+.item-info-box .item-info-img .info-img-options:hover .title-box {
+	bottom: 20%;
+}
+
+.item-info-box .item-info-img .info-img-options:hover .title-box img {
+	display: block;
+	flex: 0 0 34px;
+	height: 34px;
+}
+
+.item-info-box .item-info-img .info-img-options:hover .title-box h3 {
+	font-size: 32px;
 }
 
 .item-info-box .item-info-img .info-img-options .sticker {
@@ -9461,6 +9527,7 @@ a:hover {
 	display: block;
 	flex: 0 0 24px;
 	height: 24px;
+	margin-right: 10px;
 }
 
 .item-info-box .item-info-img .info-img-options .title-box h3 {

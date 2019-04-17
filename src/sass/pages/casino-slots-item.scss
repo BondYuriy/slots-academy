@@ -13,7 +13,13 @@
     overflow: hidden;
     position: relative;
 
-    & img {
+    &:hover {
+      & .img {
+        filter: blur(4px);
+      }
+    }
+
+    & .img {
       display: block;
       width: 100%;
       height: auto;
@@ -30,6 +36,20 @@
 
       &:hover {
         background-color: rgba(32, 72, 131, 0.8);
+
+        & .title-box {
+          bottom: 20%;
+
+          & img {
+            display: block;
+            flex: 0 0 34px;
+            height: 34px;
+          }
+
+          & h3 {
+            font-size: 32px;
+          }
+        }
       }
 
       & .sticker {
@@ -73,6 +93,7 @@
           display: block;
           flex: 0 0 24px;
           height: 24px;
+          margin-right: 10px;
         }
 
         & h3 {
