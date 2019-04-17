@@ -4,6 +4,10 @@
   background-color: $white;
   padding: 20px;
 
+  &:hover {
+    box-shadow: 0 3px 6px rgba(32, 72, 131, 0.4);
+  }
+
   & .payment-card-img {
     height: 75px;
     overflow: hidden;

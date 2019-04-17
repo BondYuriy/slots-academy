@@ -644,6 +644,35 @@
   }
 }
 
+/* === casino-slots-item page === */
+
+@media (min-width: 1200px) {
+  .starburst-casino .starburst-casino-list .card {
+    flex: 0 0 24%;
+    margin-right: 1.33%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-casino-item .top-list .casino-card {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 18px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
 /* === category page === */
 
 @media (min-width: 1200px) {

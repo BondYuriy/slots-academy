@@ -23,6 +23,17 @@
     border-radius: 10px;
   }
 
+  &:hover::before {
+    background-image: linear-gradient(
+      180deg,
+      rgba(32, 72, 131, 0.4) 0%,
+      rgba(32, 72, 131, 0.7) 27%,
+      rgba(26, 62, 114, 0.9) 61%,
+      #173868 92%,
+      #163665 100%
+    );
+  }
+
   & img {
     display: block;
     width: 100%;

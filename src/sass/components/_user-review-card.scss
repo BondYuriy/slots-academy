@@ -7,6 +7,10 @@
   justify-content: space-between;
   overflow: hidden;
 
+  &:hover {
+    box-shadow: 0 3px 6px rgba(32, 72, 131, 0.4);
+  }
+
   & .user-img-box {
     flex: 0 0 100px;
     padding-top: 20px;

@@ -242,6 +242,10 @@
         margin-bottom: 0;
       }
 
+      &:hover {
+        box-shadow: 0 3px 6px rgba(32, 72, 131, 0.4);
+      }
+
       & span {
         flex: 0 0 19%;
         font-style: 15px;

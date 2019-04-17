@@ -9,6 +9,10 @@
   align-items: center;
   overflow: hidden;
 
+  &:hover {
+    box-shadow: 0 3px 6px rgba(32, 72, 131, 0.4);
+  }
+
   & .payment-card-link {
     margin-bottom: 15px;
 

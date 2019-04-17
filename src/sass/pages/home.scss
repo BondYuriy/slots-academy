@@ -7,16 +7,22 @@
   background-color: #fafbfc;
 }
 
-.home-category-background::before {
-  display: block;
-  content: "";
-  border-radius: 10px;
-  background-color: rgba(32, 72, 131, 0.56);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.home-category-background {
+  &::before {
+    display: block;
+    content: "";
+    border-radius: 10px;
+    background-color: rgba(32, 72, 131, 0.56);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &:hover::before {
+    background-color: rgba(32, 72, 131, 0.8);
+  }
 }
 
 .home-header {

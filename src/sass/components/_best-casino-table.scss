@@ -54,6 +54,10 @@
         position: relative;
         padding: 9px 0 17px 0;
 
+        &:hover {
+          box-shadow: 0 3px 6px rgba(32, 72, 131, 0.4);
+        }
+
         & .casino-box {
           flex: 0 0 25%;
           display: flex;
