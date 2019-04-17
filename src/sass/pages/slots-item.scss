@@ -182,16 +182,25 @@
 
     & .item-bonus-card {
       flex: 0 0 32%;
-      margin-right: 2%;
-      margin-bottom: 22px;
+    }
+  }
 
-      &:nth-last-child(3n + 1) {
-        margin-right: 0;
-      }
+  & .toggle-block {
+    position: relative;
 
-      &:nth-last-child(-n + 3) {
-        margin-bottom: 0;
-      }
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 15px;
+      background-image: linear-gradient(
+        180deg,
+        rgba(250, 251, 252, 0) 0%,
+        rgba(250, 251, 252, 0.5) 50%,
+        rgba(250, 251, 252, 1) 100%
+      );
+      position: absolute;
+      bottom: 0;
     }
   }
 
@@ -300,6 +309,25 @@
     }
   }
 
+  & .toggle-block {
+    position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 15px;
+      background-image: linear-gradient(
+        180deg,
+        rgba(250, 251, 252, 0) 0%,
+        rgba(250, 251, 252, 0.5) 50%,
+        rgba(250, 251, 252, 1) 100%
+      );
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
   & p {
     font-style: 20px;
     line-height: 44px;
@@ -346,6 +374,25 @@
     }
   }
 
+  & .toggle-block {
+    position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 15px;
+      background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
   & .show-list {
     max-height: 2000px;
     transition: 4s;
@@ -383,16 +430,25 @@
 
     & .casino-card {
       flex: 0 0 32%;
-      margin-right: 2%;
-      margin-bottom: 30px;
+    }
+  }
 
-      &:nth-last-child(3n + 1) {
-        margin-right: 0;
-      }
+  & .toggle-block {
+    position: relative;
 
-      &:nth-last-child(-n + 3) {
-        margin-bottom: 0;
-      }
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 15px;
+      background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      position: absolute;
+      bottom: 0;
     }
   }
 
@@ -453,6 +509,25 @@
           &:last-child {
             margin-bottom: 0;
           }
+        }
+      }
+
+      & .toggle-block {
+        position: relative;
+
+        &::after {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 15px;
+          background-image: linear-gradient(
+            180deg,
+            rgba(250, 251, 252, 0) 0%,
+            rgba(250, 251, 252, 0.5) 50%,
+            rgba(250, 251, 252, 1) 100%
+          );
+          position: absolute;
+          bottom: 0;
         }
       }
 

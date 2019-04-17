@@ -9,15 +9,10 @@
 
   & .item-info-img {
     flex: 0 0 64%;
+    align-self: flex-start;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-
-    &:hover {
-      & .img {
-        filter: blur(4px);
-      }
-    }
 
     & .img {
       display: block;
@@ -33,24 +28,6 @@
       bottom: 0;
       border-radius: 10px;
       background-color: rgba(32, 72, 131, 0.56);
-
-      &:hover {
-        background-color: rgba(32, 72, 131, 0.8);
-
-        & .title-box {
-          bottom: 20%;
-
-          & img {
-            display: block;
-            flex: 0 0 34px;
-            height: 34px;
-          }
-
-          & h3 {
-            font-size: 32px;
-          }
-        }
-      }
 
       & .sticker {
         position: absolute;
@@ -111,7 +88,7 @@
     flex: 0 0 33%;
 
     & h1 {
-      font-style: 35px;
+      font-size: 35px;
       font-weight: $Book;
       color: $blue-color;
     }
@@ -228,6 +205,7 @@
 
   & .starburst-casino-list {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 
     & .card {
@@ -252,7 +230,6 @@
   }
 
   & .video-slots-list {
-    max-height: 280px;
     padding: 0 5px 20px 5px;
     overflow: hidden;
     transition: 2s;
