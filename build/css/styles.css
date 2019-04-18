@@ -10850,6 +10850,20 @@ body.sticky-header .header-box .logo {
 	margin-bottom: 0;
 }
 
+.item-bonus .item-bonuse-list .item-bonus-card {
+	flex: 0 0 49%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+
+.item-bonus .item-bonuse-list .item-bonus-card:nth-last-child(2n + 1) {
+	margin-right: 0;
+}
+
+.item-bonus .item-bonuse-list .item-bonus-card:nth-last-child(-n + 2) {
+	margin-bottom: 0;
+}
+
 .slots-list .casino-card {
 	flex: 0 0 49%;
 	margin-right: 2%;
@@ -10879,20 +10893,6 @@ body.sticky-header .header-box .logo {
 }
 
 .payment .payment-list-wrapper .payment-list .payment-list-item:nth-last-child(-n + 3) {
-	margin-bottom: 0;
-}
-
-.item-bonus .item-bonuse-list .item-bonus-card {
-	flex: 0 0 49%;
-	margin-right: 2%;
-	margin-bottom: 20px;
-}
-
-.item-bonus .item-bonuse-list .item-bonus-card:nth-last-child(2n + 1) {
-	margin-right: 0;
-}
-
-.item-bonus .item-bonuse-list .item-bonus-card:nth-last-child(-n + 2) {
 	margin-bottom: 0;
 }
 
@@ -11661,6 +11661,19 @@ body.sticky-header .header-box .logo {
 }
 
 .item-bonus .item-bonuse-list .item-bonus-card:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+}
+
+.item-top .item-top-list .casino-card {
+	margin-right: 2%;
+	margin-bottom: 22px;
+}
+
+.item-top .item-top-list .casino-card:nth-last-child(3n + 1) {
+	margin-right: 0;
+}
+
+.item-top .item-top-list .casino-card:nth-last-child(-n + 3) {
 	margin-bottom: 0;
 }
 
